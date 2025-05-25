@@ -1,15 +1,14 @@
-import Header from "./components/Header/Header.tsx";
-import Navigation from "./components/Navigation/Navigation.tsx";
+import Navigation from "./components/core/Navigation/Navigation.tsx";
+import Header from "./components/core/Header/Header.tsx";
 
 function App() {
 
 
     return (
         <body>
-            <Navigation/>
-            <Header/>
+            <Navigation title="A Real Cushon Page"/>
+            <Header title="Choose an ISA"/>
         </body>
-
     )
 }
 

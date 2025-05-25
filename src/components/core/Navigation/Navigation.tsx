@@ -1,11 +1,11 @@
 import styles from './Navigation.module.css'
 
-function Navigation() {
+function Navigation({ title }: { title: string }) {
     return (
         <nav className={styles.bg}>
             <a className={styles.logo} href={'https://www.cushon.co.uk'} target="_blank">
                 <img src="/cushion.svg" alt="logo" />
-                <h1>A Real Cushon Page</h1>
+                <h2>{title}</h2>
             </a>
 
             <ul>

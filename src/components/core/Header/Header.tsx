@@ -1,9 +1,9 @@
 import styles from './Header.module.css'
 
-function Header() {
+function Header({ title }: { title: string }) {
     return (
         <header className={styles.bg} >
-            <h1>Choose an ISA</h1>
+            <h1>{title}</h1>
         </header>
     )
 }
