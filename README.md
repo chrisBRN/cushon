@@ -8,4 +8,6 @@ npm run dev
 
 
 ## TODO
-- move all copy to central file and import
+- move all copy / translations to a central file and import
+- consider generalise API hooks
+- use a better loading 'spinner'

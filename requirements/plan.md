@@ -7,10 +7,14 @@ Given the nature of the exercise, this document aims to provide a rough scratch 
 1. choose 'form' of assigment, e.g., framework choice
 2. initialise a private git repo to house assignment
 3. sketch out the shape of necessary types / models
-   - 
+   - faux api response for user-info 
+   - faux api response for isa-info
+     - move into context / hooks
 4. get a basic UI up and running
    - reference color / theme from cushon site, see: https://cushon.co.uk/workplace-isa-and-savings
    - consider 'alternative' theme to diff workplace / retail ISA offering
+   - render list of cards
+     - filter based on user type
 5. tidy up the UI and create some semblance of a working product
 6. responsiveness updating / mobile
 6. step back and 'sense-check' the solution

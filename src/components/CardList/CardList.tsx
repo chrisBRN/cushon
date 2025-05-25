@@ -1,21 +1,18 @@
 import styles from './CardList.module.css'
 import Card from "../Card/Card.tsx";
-import type {JSX} from "react";
+import type { ISAListItem } from '../../types/types.ts';
 
-export type ListItem = {
-    content: string | JSX.Element | JSX.Element[]
-}
 
 function CardList({
   data
 }: {
-    data: ListItem[];
+    data: ISAListItem[];
 }) {
     return (
         <ul className={styles.cardList}>
-            {data.map((item) => {
+            {data.map((item, index) => {
                 return (
-                    <li>
+                    <li key={`isa_item_${index}`}>
                         <Card>
                             {item.content}
                         </Card>
