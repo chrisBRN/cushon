@@ -12,6 +12,7 @@ Given the nature of the exercise, this document aims to provide a rough scratch 
    - reference color / theme from cushon site, see: https://cushon.co.uk/workplace-isa-and-savings
    - consider 'alternative' theme to diff workplace / retail ISA offering
 5. tidy up the UI and create some semblance of a working product
+6. responsiveness updating / mobile
 6. step back and 'sense-check' the solution
 7. tidy up / lint
 8. add relevant stakeholders to git repo / make public and share

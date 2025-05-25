@@ -1,12 +1,13 @@
 .cardList {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 
     list-style: none;
 
     & li {
-        width: 30%;
+        /*width: 30%;*/
     }
 }
 
