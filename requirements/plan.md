@@ -1,0 +1,25 @@
+# High Level Planning Document
+
+Given the nature of the exercise, this document aims to provide a rough scratch pad for initial planning. It is highly likely that this document will become stale as work on the assignment progresses, and as such, this should not be seen as 'documentation' but more as an illustration of a thought-process. In a real-world production environment, this kind of planning would likely take place before starting or in temporary pseudocode.
+
+## Initial Plan
+
+1. choose 'form' of assigment, e.g., framework choice
+2. initialise a private git repo to house assignment
+3. sketch out the shape of necessary types / models
+4. get a basic UI up and running
+5. tidy up the UI and create some semblance of a working product
+6. step back and 'sense-check' the solution
+7. tidy up / lint
+8. add relevant stakeholders to git repo / make public and share
+
+## Initial Choices
+1. NPM, ReactJS, TypeScript and Vite
+
+- NPM: straightforward and well understood, for this assignment it does not make sense to focus on this area of the problem.
+
+- Vite: provides an easy to get started 'create-react-app' which for this an assignment of this nature significantly reduces the problem space, so I can focus on the important parts
+
+- TypeScript: whilst it is likely overkill for something of this scope, TS is useful for sketching out the various interfaces and helpful in avoiding time-sucking bugs / debugging
+
+- ReactJS: ReactJS is widely used and well-understood, making it easy to demo and debug.
