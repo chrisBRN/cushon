@@ -7,7 +7,10 @@ Given the nature of the exercise, this document aims to provide a rough scratch 
 1. choose 'form' of assigment, e.g., framework choice
 2. initialise a private git repo to house assignment
 3. sketch out the shape of necessary types / models
+   - 
 4. get a basic UI up and running
+   - reference color / theme from cushon site, see: https://cushon.co.uk/workplace-isa-and-savings
+   - consider 'alternative' theme to diff workplace / retail ISA offering
 5. tidy up the UI and create some semblance of a working product
 6. step back and 'sense-check' the solution
 7. tidy up / lint
