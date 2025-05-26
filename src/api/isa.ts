@@ -1,41 +1,35 @@
-import { type ISAItem, UserChannel } from '../types/types.ts';
+import { type ISAItem, ISAProduct, UserChannel } from '../types/types.ts';
 
 const mockISAdata: ISAItem[] = [
     {
-        name: 'ISA 1',
+        product: ISAProduct.ISA_1,
         availability: [UserChannel.Direct],
         rate: 3,
         term: 12,
     },
     {
         // multi-channel example
-        name: 'ISA 2',
+        product: ISAProduct.ISA_2,
         availability: [UserChannel.Direct, UserChannel.Employer],
         rate: 3,
         term: 0,
     },
     {
-        name: 'ISA 3',
-        availability: [UserChannel.Direct],
-        rate: 3,
-        term: 0,
-    },
-    {
-        name: 'ISA 4',
+        product: ISAProduct.ISA_3,
         availability: [UserChannel.Employer],
         rate: 3,
         term: 0,
     },
     {
-        name: 'ISA 5',
+        product: ISAProduct.ISA_4,
         availability: [UserChannel.Direct],
         rate: 3,
         term: 0,
     },
-    // malformed example
-    // {
-    //     name: 'not an isa',
-    // } as ISAItem
+    // malformed example, (filtered by validation)
+    {
+        product: 'not an isa' as ISAProduct,
+    } as ISAItem
 ];
 
 // mock get call with simulated loading

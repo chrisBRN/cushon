@@ -1,6 +1,4 @@
-// consider replacing with object literal (see: erasableSyntaxOnly)
-import type { JSX } from 'react';
-
+// consider replacing enums with object literal (see: erasableSyntaxOnly)
 export enum UserChannel {
     Direct = 'Direct',
     Employer = 'Employer',
@@ -11,15 +9,18 @@ export type User = {
     // more properties here
 }
 
+export enum ISAProduct {
+    ISA_1 = 'ISA_1',
+    ISA_2 = 'ISA_2',
+    ISA_3 = 'ISA_3',
+    ISA_4 = 'ISA_4',
+}
+
 export type ISAItem = {
-    name: string;
+    product: ISAProduct;
     availability: UserChannel[];
     rate: number;
     term: number;
-}
-
-export type ISAListItem = {
-    content: string | JSX.Element | JSX.Element[]
 }
 
 export type APIResponse<T> = {

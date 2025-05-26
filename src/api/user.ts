@@ -1,4 +1,4 @@
-import { type User , UserChannel } from '../types/types.ts';
+import { type User, UserChannel } from '../types/types.ts';
 
 const mockDirectUser = {
     channel: UserChannel.Direct
@@ -14,7 +14,7 @@ function get(_channel: UserChannel /* for mocking */): Promise<User> {
         const response = _channel === UserChannel.Direct
                          ? mockDirectUser
                          : mockEmployerUser;
-        setTimeout(() => resolve(response) , 500);
+        setTimeout(() => resolve(response), 500);
     });
 }
 

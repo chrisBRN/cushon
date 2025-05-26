@@ -1,4 +1,4 @@
-import { type ISAItem, UserChannel } from '../../../types/types.ts';
+import { type ISAItem, ISAProduct, UserChannel } from '../../../types/types.ts';
 
 // a stub function that checks its input conforms to the expected type
 // with more time, I would opt for a proper schema validation library like zod / yup
@@ -13,7 +13,12 @@ export function validate(input: ISAItem[] | undefined) {
 
     return input.filter((item) => {
 
-        if (!item.name || typeof item.name !== 'string') {
+        const productIsValid = [ISAProduct.ISA_1, ISAProduct.ISA_2, ISAProduct.ISA_3, ISAProduct.ISA_4].includes(item.product);
+        if (
+            !item.product ||
+            typeof item.product !== 'string' ||
+            !productIsValid
+        ) {
             return undefined;
         }
 
@@ -29,7 +34,8 @@ export function validate(input: ISAItem[] | undefined) {
             return undefined;
         }
 
-        const channelsAreValid = item.availability.every((channel) => [UserChannel.Employer, UserChannel.Direct].includes(channel));
+        const channelsAreValid = item.availability.every((channel) => [UserChannel.Employer, UserChannel.Direct].includes(
+            channel));
 
         if (!channelsAreValid) {
             return undefined;

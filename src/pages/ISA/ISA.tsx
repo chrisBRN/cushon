@@ -1,31 +1,9 @@
 import styles from './ISA.module.css';
 import CardList from '../../components/CardList/CardList.tsx';
-import { type ISAItem, type ISAListItem, type User, UserChannel } from '../../types/types.ts';
+import { UserChannel } from '../../types/types.ts';
 import useUser from '../../hooks/useUser.tsx';
 import useISA from '../../hooks/useIsa.tsx';
-import { isaAPIItemToISAListItem } from './helpers/transform.tsx';
-import { filterDirectUserChannelISAs, filterEmployerChannelISAs } from './helpers/filter.ts';
-import { validate } from './helpers/validate.ts';
-
-
-
-const parseAPIData = (user: User | undefined, data: ISAItem[] | undefined): ISAListItem[] => {
-    if (!user) {
-        // not technically possible as parseAPIData won't be called if we are not 'loading'
-        // in a 'real' application, we would need to account for missing data though.
-        return [];
-    }
-
-    const validISAs = validate(data) || []; // TODO handle error / missing data here
-
-    console.log(validISAs);
-
-    const filterFunction = user.channel === UserChannel.Direct
-                           ? filterDirectUserChannelISAs
-                           : filterEmployerChannelISAs;
-
-    return validISAs.filter(filterFunction).map(isaAPIItemToISAListItem);
-};
+import { parseAPIData } from './helpers/parse.ts';
 
 function ISA() {
     const { data: user, loading: userLoading } = useUser(UserChannel.Direct);
@@ -43,8 +21,19 @@ function ISA() {
 
     return (
         <main className={styles.content}>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+            <div>
+                <h3>Deposit in cash or invest for potentially higher returns</h3>
+                <p>With Cushon you can set up as many different ISA pots as you like (they're all held in one big ISA
+                    behind the scenes).</p>
+            </div>
+            <div>
+                <p>
+                    <span>Looking for the Cushon products provided by your employer? find them </span>
+                    <a href="https://www.cushon.co.uk/isa">here.</a>
+                </p>
+
+            </div>
+
             <CardList data={parseAPIData(user, ISAs)}/>
         </main>
     );
