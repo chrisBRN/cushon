@@ -5,8 +5,11 @@ const config: Config = {
     testEnvironment: 'node',
     testMatch: ['<rootDir>/**/__tests__/**/*.test.ts'],
     testPathIgnorePatterns: ['/node_modules/'],
-    globals: { 'ts-jest': { diagnostics: false } },
-    transform: {},
+    transform: {
+        '^.+\\.(t|j)sx?$': ['ts-jest', {
+            diagnostics: false,
+        }],
+    },
 };
 
 export default config;
