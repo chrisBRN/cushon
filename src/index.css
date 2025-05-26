@@ -13,7 +13,7 @@
   --brand-eleven: #efefef;
 
   /* broadly web-safe font stake, see: https://github.com/chrisBRN/web-safe-fonts */
-  --ff: 'Baskerville', 'Baskerville Old face', 'Garamond', 'Times New Roman', serif;
+  --ff: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
 * {
@@ -28,10 +28,14 @@
 
 body {
   font-family: var(--ff), serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
 a {
   font-family: var(--ff), serif;
+}
+
+button {
+  cursor: pointer;
 }

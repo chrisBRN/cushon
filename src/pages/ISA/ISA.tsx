@@ -21,19 +21,16 @@ function ISA() {
 
     return (
         <main className={styles.content}>
-            <div>
-                <h3>Deposit in cash or invest for potentially higher returns</h3>
-                <p>With Cushon you can set up as many different ISA pots as you like (they're all held in one big ISA
-                    behind the scenes).</p>
-            </div>
+            <h3 className={styles.title}>Deposit in cash or invest for potentially higher returns</h3>
+            <p>
+                With Cushon you can set up as many different ISA pots as you like (they're all held in one big ISA behind the scenes).
+            </p>
             <div>
                 <p>
                     <span>Looking for the Cushon products provided by your employer? find them </span>
-                    <a href="https://www.cushon.co.uk/isa">here.</a>
+                    <a className={styles.link} href="https://www.cushon.co.uk/isa">here...</a>
                 </p>
-
             </div>
-
             <CardList data={parseAPIData(user, ISAs)}/>
         </main>
     );

@@ -7,7 +7,8 @@ Given the nature of the exercise, this document aims to provide a rough scratch 
 1. choose 'form' of assigment, e.g., framework choice
 2. initialise a private git repo to house assignment
 3. sketch out the shape of necessary types / models
-   - faux api response for user-info 
+   - faux api response for user-info
+     - consider consuming via URI params
    - faux api response for isa-info
      - move into context / hooks
 4. get a basic UI up and running
