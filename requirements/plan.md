@@ -18,9 +18,10 @@ Given the nature of the exercise, this document aims to provide a rough scratch 
      - filter based on user type
 5. tidy up the UI and create some semblance of a working product
 6. responsiveness updating / mobile
-6. step back and 'sense-check' the solution
-7. tidy up / lint
-8. add relevant stakeholders to git repo / make public and share
+7. unit testing 
+8. step back and 'sense-check' the solution 
+9. tidy up / lint 
+10. add relevant stakeholders to git repo / make public and share
 
 ## Initial Choices
 1. NPM, ReactJS, TypeScript and Vite
