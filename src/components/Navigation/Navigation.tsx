@@ -2,10 +2,10 @@ import styles from './Navigation.module.css'
 
 function Navigation({ title }: { title: string }) {
     return (
-        <nav className={styles.bg}>
+        <nav className={styles.container}>
             <a className={styles.logo} href={'https://www.cushon.co.uk'} target="_blank">
                 <img src="/cushion.svg" alt="logo" />
-                <h2>{title}</h2>
+                <h2 className={styles.title}>{title}</h2>
             </a>
 
             <ul>

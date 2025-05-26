@@ -1,12 +1,16 @@
-.cardList {
+.container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: var(--centered-on-mobile, unset);
     gap: 1rem;
     list-style: none;
+
+    text-align: var(--centered-on-mobile, unset);
 }
 
 .listItem {
     min-height: 100%;
+    width: min(340px, 100%);
 }
 
 

@@ -9,7 +9,7 @@ type Props = {
 
 function CardList(props: Props) {
     return (
-        <ul className={styles.cardList}>
+        <ul className={styles.container}>
             {props.data.map((item, index) => {
                 return (
                     <li key={`isa_item_${index}`} className={styles.listItem}>

@@ -10,7 +10,7 @@
     color: var(--brand-five);
 
     & h1 {
-        font-size: 4rem;
+        font-size: calc(var(--smaller-on-mobile, 1) * 4rem);
         font-weight: lighter;
     }
 }

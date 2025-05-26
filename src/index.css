@@ -16,6 +16,14 @@
   --ff: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
+@media screen and (max-width: 840px) {
+  :root {
+    --desktop-only: none;
+    --smaller-on-mobile: 0.75;
+    --centered-on-mobile: center;
+  }
+}
+
 * {
   /*
     not advised for bigger projects as hitting every element introduces a performance issue
