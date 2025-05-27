@@ -2,7 +2,7 @@ import styles from './ISA.module.css'
 import CardList from '../../components/CardList/CardList.tsx'
 import { UserChannel } from '../../types/types.ts'
 import useUser from '../../hooks/useUser.tsx'
-import useISA from '../../hooks/useISA.tsx'
+import useISA from '../../hooks/useFoo.tsx'
 import { parseAPIData } from './helpers/parse.ts'
 
 function ISA() {
