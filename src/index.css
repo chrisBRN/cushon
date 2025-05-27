@@ -1,49 +1,49 @@
 :root {
-  /* taken from cushon site */
-  --brand-one: #e52d90;
-  --brand-two: #00b5ef;
-  --brand-three: #b3539f;
-  --brand-four: #2f2f2f;
-  --brand-five: #fff;
-  --brand-six: #000;
-  --brand-seven: #ccc;
-  --brand-eight: #f8f8f8;
-  --brand-nine: #ebebeb;
-  --brand-ten: #666;
-  --brand-eleven: #efefef;
+	/* taken from cushon site */
+	--brand-one: #e52d90;
+	--brand-two: #00b5ef;
+	--brand-three: #b3539f;
+	--brand-four: #2f2f2f;
+	--brand-five: #fff;
+	--brand-six: #000;
+	--brand-seven: #ccc;
+	--brand-eight: #f8f8f8;
+	--brand-nine: #ebebeb;
+	--brand-ten: #666;
+	--brand-eleven: #efefef;
 
-  /* broadly web-safe font stake, see: https://github.com/chrisBRN/web-safe-fonts */
-  --ff: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+	/* broadly web-safe font stake, see: https://github.com/chrisBRN/web-safe-fonts */
+	--ff: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
 @media screen and (max-width: 840px) {
-  :root {
-    --desktop-only: none;
-    --smaller-on-mobile: 0.75;
-    --centered-on-mobile: center;
-  }
+	:root {
+		--desktop-only: none;
+		--smaller-on-mobile: 0.75;
+		--centered-on-mobile: center;
+	}
 }
 
 * {
-  /*
+	/*
     not advised for bigger projects as hitting every element introduces a performance issue
     but for this small project it's ok
   */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: var(--ff), serif;
-  font-size: 20px;
-  line-height: 1.5;
+	font-family: var(--ff), serif;
+	font-size: 20px;
+	line-height: 1.5;
 }
 
 a {
-  font-family: var(--ff), serif;
+	font-family: var(--ff), serif;
 }
 
 button {
-  cursor: pointer;
+	cursor: pointer;
 }

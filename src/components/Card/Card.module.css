@@ -1,11 +1,9 @@
 .card {
-    background: #fff;
-    border: 1px solid var(--brand-one);
-    border-radius: 8px;
-    padding: 1rem;
-    width: min(320px, 100%);
-    height: 100%;
-    min-height: 20vmin;
+	background: #fff;
+	border: 1px solid var(--brand-one);
+	border-radius: 8px;
+	padding: 1rem;
+	width: min(320px, 100%);
+	height: 100%;
+	min-height: 20vmin;
 }
-
-

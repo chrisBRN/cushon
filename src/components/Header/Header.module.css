@@ -1,16 +1,16 @@
 .container {
-    width: 100%;
-    height: 18rem;
-    background-color: var(--brand-one);
+	width: 100%;
+	height: 18rem;
+	background-color: var(--brand-one);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-    color: var(--brand-five);
+	color: var(--brand-five);
 
-    & h1 {
-        font-size: calc(var(--smaller-on-mobile, 1) * 4rem);
-        font-weight: lighter;
-    }
+	& h1 {
+		font-size: calc(var(--smaller-on-mobile, 1) * 4rem);
+		font-weight: lighter;
+	}
 }

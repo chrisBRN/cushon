@@ -1,9 +1,9 @@
-import { type ISAItem, UserChannel } from '../../../types/types.ts';
+import { type ISAItem, UserChannel } from '../../../types/types.ts'
 
 export function filterDirectUserChannelISAs(item: ISAItem) {
-    return item.availability.includes(UserChannel.Direct);
+	return item.availability.includes(UserChannel.Direct)
 }
 
 export function filterEmployerChannelISAs(item: ISAItem) {
-    return item.availability.includes(UserChannel.Employer);
+	return item.availability.includes(UserChannel.Employer)
 }

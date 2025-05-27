@@ -1,17 +1,17 @@
-import styles from './Card.module.css';
+import styles from './Card.module.css'
 
 function Card({
-    children,
-    onClick,
+	children,
+	onClick,
 }: {
-    children: React.ReactNode;
-    onClick?: () => void;
+	children: React.ReactNode
+	onClick?: () => void
 }) {
-    return (
-        <div className={styles.card} onClick={onClick}>
-            {children}
-        </div>
-    );
+	return (
+		<div className={styles.card} onClick={onClick}>
+			{children}
+		</div>
+	)
 }
 
-export default Card;
+export default Card
