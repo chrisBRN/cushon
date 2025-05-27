@@ -1,9 +1,8 @@
 import { type ISAItem, ISAProduct } from '../../types/types.ts';
 
-import styles from './ListItem.module.css';
+import styles from './ISAListItem.module.css';
 
-// this information would likley come from the backend;
-// however, this presents issues with localisation if non-english is supported so leaving here for now
+// TODO: refactor, so this is part of a parent or api response (localisation issues aside) rather than in the listItem
 const productDetailsMap = {
     [ISAProduct.ISA_1]: {
         name: 'Special ISA',
@@ -23,8 +22,8 @@ const productDetailsMap = {
     },
 };
 
-
-function ListItem(props: ISAItem) {
+// TODO: refactor to avoid translations / copy directly in the component (should be passed in)
+function ISAListItem(props: ISAItem) {
     const isEasyAccess = props.term === 0;
     const details = productDetailsMap[props.product];
 
@@ -43,7 +42,7 @@ function ListItem(props: ISAItem) {
                      <li>Easy Access (instant)</li>
                  )
                  : (
-                     <li>Minimum investment length {props.term} months</li>
+                     <li>Investment length {props.term} months</li>
                  )}
                 {(details.notes || []).map((note) => <li>{note}</li>)}
             </ul>
@@ -58,4 +57,4 @@ function ListItem(props: ISAItem) {
     );
 }
 
-export default ListItem;
+export default ISAListItem;

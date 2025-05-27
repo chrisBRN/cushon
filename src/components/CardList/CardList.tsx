@@ -1,7 +1,7 @@
 import styles from './CardList.module.css';
 import Card from '../Card/Card.tsx';
 import type { ISAItem } from '../../types/types.ts';
-import ListItem from '../ListItem/ListItem.tsx';
+import ISAListItem from '../ISAListItem/ISAListItem.tsx';
 
 type Props = {
     data: ISAItem[];
@@ -14,7 +14,7 @@ function CardList(props: Props) {
                 return (
                     <li key={`isa_item_${index}`} className={styles.listItem}>
                         <Card>
-                            <ListItem {...item} />
+                            <ISAListItem {...item} />
                         </Card>
                     </li>
                 );

@@ -16,6 +16,7 @@ export enum ISAProduct {
     ISA_4 = 'ISA_4',
 }
 
+// TODO add 2nd type to differentiate API response from needed UI shape
 export type ISAItem = {
     product: ISAProduct;
     availability: UserChannel[];
