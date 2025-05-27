@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import type { APIResponse, ISAItem } from '../types/types.ts'
 import { isaAPI } from '../api/isa.ts'
 
-function useIsa(
+function useISA(
 	_hasError: boolean = false
 ): APIResponse<ISAItem[] | undefined> {
 	const [data, setData] = useState<ISAItem[] | undefined>()
@@ -34,4 +34,4 @@ function useIsa(
 	}
 }
 
-export default useIsa
+export default useISA

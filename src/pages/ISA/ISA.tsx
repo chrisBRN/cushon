@@ -2,12 +2,12 @@ import styles from './ISA.module.css'
 import CardList from '../../components/CardList/CardList.tsx'
 import { UserChannel } from '../../types/types.ts'
 import useUser from '../../hooks/useUser.tsx'
-import useIsa from '../../hooks/useIsa.tsx'
+import useISA from '../../hooks/useISA.tsx'
 import { parseAPIData } from './helpers/parse.ts'
 
 function ISA() {
 	const { data: user, loading: userLoading } = useUser(UserChannel.Direct)
-	const { data: ISAs, loading: isaLoading } = useIsa()
+	const { data: ISAs, loading: isaLoading } = useISA()
 
 	const loading = userLoading || isaLoading
 
